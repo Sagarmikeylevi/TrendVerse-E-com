@@ -9,8 +9,8 @@ const Home = () => {
     <>
       <CollectionGrid />
       <Brands />
-      {/* <CurrentPicks />
-      <FeaturedProduct />
+      <CurrentPicks />
+      {/* <FeaturedProduct />
       <NewsletterSubscription /> */}
     </>
   );
