@@ -7,12 +7,11 @@ import NewsletterSubscription from "../components/NewsletterSubscription";
 const Home = () => {
   return (
     <>
-      {/* <CollectionGrid />
-      <Brands />
+      <CollectionGrid />
+      {/* <Brands />
       <CurrentPicks />
       <FeaturedProduct />
       <NewsletterSubscription /> */}
-      <h1>Home</h1>
     </>
   );
 };
