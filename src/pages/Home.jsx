@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <>
       <CollectionGrid />
-      {/* <Brands />
-      <CurrentPicks />
+      <Brands />
+      {/* <CurrentPicks />
       <FeaturedProduct />
       <NewsletterSubscription /> */}
     </>
