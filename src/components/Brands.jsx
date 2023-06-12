@@ -23,7 +23,7 @@ const Brands = () => {
           return (
             <div>
               <img
-                className="p-2 h-14 w-14 cursor-pointer hover:shadow-sm sm:h-16 sm:w-16 md:h-[4.5rem] md:w-[4.5rem] lg:h-20 lg:w-20"
+                className="p-2 h-14 w-14 cursor-pointer hover:shadow-sm rounded-md transition duration-300 ease-in-out group sm:h-16 sm:w-16 md:h-[4.5rem] md:w-[4.5rem] lg:h-20 lg:w-20"
                 src={brand}
                 alt=""
               />

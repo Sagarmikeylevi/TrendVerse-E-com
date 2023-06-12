@@ -2,97 +2,34 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      {/* <div className="container mx-auto py-8 px-4">
-        <div className="flex flex-wrap">
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8">
-            <h3 className="text-xl font-bold mb-4">Company</h3>
-            <ul className="list-none">
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  About Us
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Contact Us
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Careers
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8">
-            <h3 className="text-xl font-bold mb-4">Customer Service</h3>
-            <ul className="list-none">
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  FAQ
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Shipping &amp; Returns
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Privacy Policy
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8">
-            <h3 className="text-xl font-bold mb-4">Categories</h3>
-            <ul className="list-none">
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Electronics
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Clothing
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Home &amp; Garden
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8">
-            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <ul className="list-none">
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Facebook
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Twitter
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Instagram
-                </a>
-              </li>
-            </ul>
-          </div>
+    <footer className="bg-gray-900 text-white py-4">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+        <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} TrendVerse
+          </p>
+          <a href="#" className="text-sm text-gray-300 hover:text-white">
+            About Us
+          </a>
+          <a href="#" className="text-sm text-gray-300 hover:text-white">
+            Contact
+          </a>
+          <a href="#" className="text-sm text-gray-300 hover:text-white">
+            FAQ
+          </a>
         </div>
-        <hr className="border-gray-800 my-8" />
-        <div className="text-center text-gray-400">
-          &copy; {new Date().getFullYear()} Your E-Commerce App. All rights
-          reserved.
+        <div className="flex items-center space-x-4">
+          <a href="#" className="text-gray-300 hover:text-white">
+            <span className="fab fa-twitter">Twitter</span>
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            <span className="fab fa-facebook">Facebook</span>
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            <span className="fab fa-instagram">Instagram</span>
+          </a>
         </div>
-      </div> */}
-      <h1>Fotter</h1>
+      </div>
     </footer>
   );
 };
