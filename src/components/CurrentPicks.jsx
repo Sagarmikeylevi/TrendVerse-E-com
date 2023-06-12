@@ -12,7 +12,7 @@ const CurrentPicks = () => {
   ];
   return (
     <div className="mt-16 p-4 mb-8 flex flex-col justify-center items-center">
-      <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl mb-12 relative">
+      <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl mb-12 relative z-40">
         Classifications
         <span className="absolute left-[38%] right-0 bottom-[-1rem] w-[25%] h-1 bg-gray-400 rounded"></span>
       </h1>
@@ -27,9 +27,9 @@ const CurrentPicks = () => {
             }}
           >
             <div className="mt-8 h-4/5 flex flex-row justify-center items-end ">
-              <button className="h-12 w-3/5 bg-gray-200 rounded font-bold flex flex-row items-center justify-between p-4">
+              <button className="h-12 w-3/5 bg-gray-200 rounded font-bold flex flex-row items-center justify-between p-4 hover:bg-teal-400 hover:text-white transition duration-300 ease-in-out group">
                 {item.label}
-                <FaArrowRight className="text-sm mt-[5px] text-gray-500" />
+                <FaArrowRight className="text-sm mt-[5px] text-gray-500 group-hover:text-white" />
               </button>
             </div>
           </div>

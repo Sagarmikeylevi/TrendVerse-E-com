@@ -4,8 +4,8 @@ const Navigation = () => {
   const listNameStyle =
     "hidden text-lg sm:group-hover:block md:block";
   return (
-    <nav className="fixed bg-white h-16 w-screen flex flex-row items-center justify-between">
-      <div className="ml-4 text-lg font-semibold sm:text-xl md:text-2xl">
+    <nav className="fixed bg-white h-16 w-screen flex flex-row items-center justify-between z-50">
+      <div className="ml-4 text-lg font-semibold sm:text-xl md:text-2xl lg:ml-8">
         <h1>TrendVerse</h1>
       </div>
       <div className="h-full w-4/5">

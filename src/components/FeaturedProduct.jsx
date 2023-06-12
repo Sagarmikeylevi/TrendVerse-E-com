@@ -1,50 +1,63 @@
 import React from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import sweater from "../assets/sweater.jpg";
+import whiteShirt from "../assets/whiteShirt.jpg";
+import palazzo from "../assets/palazo.jpg";
 
 const FeaturedProduct = () => {
   const products = [
     {
       id: 1,
-      name: "Product 1",
-      image:
-        "https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg?auto=compress&cs=tinysrgb&w=600",
-      cost: "$19.99",
+      imageURL: sweater,
+      title: "Full sleeve sweater",
+      price: "$58",
     },
     {
       id: 2,
-      name: "Product 2",
-      image:
-        "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600",
-      cost: "$24.99",
+      imageURL: whiteShirt,
+      title: "White shirt",
+      price: "$32",
     },
     {
       id: 3,
-      name: "Product 3",
-      image:
-        "https://images.pexels.com/photos/15963544/pexels-photo-15963544/free-photo-of-young-woman-wearing-a-jacket-and-sitting-by-the-window.jpeg?auto=compress&cs=tinysrgb&w=600",
-      cost: "$24.99",
+      imageURL: palazzo,
+      title: "Palazzo",
+      price: "$68",
     },
-    // Add more products here
   ];
-
   return (
-    <div>
-      <h2 className="text-2xl font-semibold mb-4">Featured Products</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="mt-16 p-4 mb-8 flex flex-col justify-center items-center">
+      <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl mb-12 relative z-40">
+        Featured products
+        <span className="absolute left-[38%] right-0 bottom-[-1rem] w-[25%] h-1 bg-gray-400 rounded"></span>
+      </h1>
+
+      <div className="flex felx-row text-4xl mb-8 gap-12 text-gray-400">
+        <FaChevronLeft className="cursor-pointer text-black" />
+        <FaChevronRight className="cursor-pointer" />
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-12">
         {products.map((product) => (
-          <div
-            key={product.id}
-            className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center"
-          >
+          <div className="w-64 flex flex-col" key={product.id}>
             <img
-              className="w-56 h-56 object-cover rounded-md mb-4"
-              src={product.image}
-              alt={product.name}
+              className="h-72 w-full rounded-sm shadow-sm"
+              src={product.imageURL}
+              alt=""
             />
-            <h3 className="text-lg font-medium mb-2">{product.name}</h3>
-            <p className="text-gray-600 mb-4">{product.cost}</p>
-            <button className="bg-blue-500 text-white rounded-md py-2 px-4">
-              Add to Cart
-            </button>
+            <div className="w-full flex flex-row justify-between items-center">
+              <div className="mt-2 flex flex-col">
+                <h1 className="font-semibold text-gray-700">{product.title}</h1>
+                <p className="font-bold">{product.price}</p>
+              </div>
+              <div className="h-12 w-12 cursor-pointer flex justify-center items-center hover:bg-teal-400 rounded-md shadow-sm transition duration-300 ease-in-out group">
+                <img
+                  className="h-6 w-6 group-hover:h-8 group-hover:w-8"
+                  src="https://cdn-icons-png.flaticon.com/128/2543/2543369.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         ))}
       </div>

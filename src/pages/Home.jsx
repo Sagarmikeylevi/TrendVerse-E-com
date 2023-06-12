@@ -10,8 +10,8 @@ const Home = () => {
       <CollectionGrid />
       <Brands />
       <CurrentPicks />
-      {/* <FeaturedProduct />
-      <NewsletterSubscription /> */}
+      <FeaturedProduct />
+      {/* <NewsletterSubscription /> */}
     </>
   );
 };
