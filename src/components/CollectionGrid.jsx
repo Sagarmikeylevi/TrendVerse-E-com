@@ -12,7 +12,7 @@ const CollectionGrid = () => {
       >
         <div className="w-full h-full flex flex-col justify-center items-center text-center md:w-4/5">
           <h1 className="mt-48 text-5xl text-white font-bold mb-8 md:mt-48 lg:text-6xl lg:mt-40">
-            Level up your style with our summer collection
+            Level Up Your Style With Our Summer Collection
           </h1>
           <button className="h-12 w-32 bg-white flex flex-row justify-evenly items-center font-bold rounded p-2 hover:bg-teal-400 hover:text-white transition duration-300 ease-in-out group">
             Shop now{" "}

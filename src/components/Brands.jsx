@@ -12,7 +12,7 @@ const Brands = () => {
   const brands = [levis, gucciIcon, adidas, ck, nike, zara, chanel, versace];
 
   return (
-    <div className="mt-16 p-4 mb-8 flex flex-col justify-center items-center">
+    <div id="brand" className="mt-16 p-4 mb-8 flex flex-col justify-center items-center">
       <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl mb-12 relative z-40">
         Brands
         <span className="absolute left-[35%] right-0 bottom-[-0.7rem] w-[30%] h-1 bg-gray-400 rounded"></span>

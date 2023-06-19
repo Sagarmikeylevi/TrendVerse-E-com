@@ -40,10 +40,10 @@ const ShowProducts = () => {
   ];
   return (
     <div className="h-[120vh] w-full grid place-items-center">
-      <div className="w-[90%] pt-24 flex flex-row justify-between items-center">
-        <div className="flex flex-row items-center sm:text-lg">
+      <div className="w-[90%] pt-20 flex flex-row justify-between items-center">
+        <div className="p-2 rounded flex flex-row items-center sm:text-lg before:w-2 before:h-4 before:bg-slate-600 before:mr-2 bg-[#e6e6e6]">
           <p className="font-medium text-slate-500 mr-2 cursor-pointer">Home</p>
-          <FaChevronRight className="mt-1 text-slate-300 mr-2" />
+          <FaChevronRight className="mt-1 text-slate-400 mr-2" />
           <p className="font-semibold text-slate-600 cursor-pointer">
             Products
           </p>

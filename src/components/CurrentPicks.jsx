@@ -11,7 +11,7 @@ const CurrentPicks = () => {
     { label: "Women", image: women },
   ];
   return (
-    <div className="mt-16 p-4 mb-8 flex flex-col justify-center items-center">
+    <div id="shop" className="mt-16 p-4 mb-8 flex flex-col justify-center items-center">
       <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl mb-12 relative z-40">
         Classifications
         <span className="absolute left-[38%] right-0 bottom-[-1rem] w-[25%] h-1 bg-gray-400 rounded"></span>
